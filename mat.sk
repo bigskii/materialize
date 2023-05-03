@@ -1,0 +1,469 @@
+#DONE:
+#-diamond helmet
+#-diamond chestplate
+#-diamond leggings
+#-diamond boots
+#-gold helmet
+#-gold chestplate
+#-gold leggings
+#-gold boots
+
+#NEEDED:
+#-iron helmet
+#-iron chestplate
+#-iron leggings
+#-iron boots
+#ERRORS:
+#96 - tab error - done
+#135 - tab error - done
+#136 - tab error - done
+
+command /mat:
+	description: Turn your armor/tools into raw materials!
+	permission: skript.mat
+
+	trigger:
+#  _____ _____          __  __  ____  _   _ _____  
+# |  __ \_   _|   /\   |  \/  |/ __ \| \ | |  __ \ 
+# | |  | || |    /  \  | \  / | |  | |  \| | |  | |
+# | |  | || |   / /\ \ | |\/| | |  | | . ` | |  | |
+# | |__| || |_ / ____ \| |  | | |__| | |\  | |__| |
+# |_____/_____/_/    \_\_|  |_|\____/|_| \_|_____/ 
+                                                  
+                                                  
+	#diamond gear
+		#helmet
+		if held item is diamond helmet:
+			send durability of held item	
+			if durability of held item = 0:
+				remove held item from the player
+				give 5 of diamond to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 73:
+					remove held item from the player
+					give 4 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 72:
+				if durability of held item < 145:
+					remove held item from the player
+					give 3 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 144:
+				if durability of held item < 217:
+					remove held item from the player
+					give 2 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 216:
+				if durability of held item < 289:
+					remove held item from the player
+					give 1 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 288:
+				if durability of held item < 363:
+					remove held item from the player
+					send "Materialized!"
+		#chestplate
+		if held item is diamond chestplate:
+			send durability of held item
+			if durability of held item = 0:
+				remove held item from the player 
+				give 8 of diamond to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 67:
+					remove held item from the player
+					give 7 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 66:
+				if durability of held item < 133:
+					remove held item from the player
+					give 6 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 132:
+				if durability of held item < 199:
+					remove held item from the player
+					give 5 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 198:
+				if durability of held item < 265:
+					remove held item from the player
+					give 4 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 264:
+				if durability of held item < 331:
+					remove held item from the player
+					give 3 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 330:
+				if durability of held item < 397:
+					remove held item from the player
+					give 2 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 396:
+				if durability of held item < 463:
+					remove held item from the player
+					give 1 of diamond to the player
+					send "Materialized!"
+			if durability of held item > 462:
+				if durability of held item < 529:
+					remove held item from the player
+					send "Materialized!"
+		#leggings
+		if held item is diamond leggings:
+			if durability of held item = 0:
+				remove held item from the player
+				give 7 diamonds to the player
+			if durability of held item > 0:
+				if durability of held item < 71:
+					give 6 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 70:
+				if durability of held item < 141:
+					give 5 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 140:
+				if durability of held item < 211:
+					give 4 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 210:
+				if durability of held item < 281:
+					give 3 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 280:
+				if durability of held item < 351:
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 350:
+				if durability of held item < 421:
+					give diamond to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 420:
+				if durability of held item < 496:
+					remove held item from the player
+					send "Materialized!"
+		#boots
+		if held item is diamond boots:
+			if durability of held item is 0:
+				give 4 diamonds to the player
+				remove held item from the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 108:
+					give 3 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 107:
+				if durability of held item < 215:
+					give 2 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 214:
+				if durability of held item < 322:
+					give diamond to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 321:
+				if durability of held item < 430:
+					remove held item from the player
+					send "Materialized!"
+#   _____  ____  _      _____  
+#  / ____|/ __ \| |    |  __ \ 
+# | |  __| |  | | |    | |  | |
+# | | |_ | |  | | |    | |  | |
+# | |__| | |__| | |____| |__| |
+#  \_____|\____/|______|_____/ 
+		#gold gear
+		#helmet
+		if held item is gold helmet:
+			send durability of held item	
+			if durability of held item = 0:
+				remove held item from the player
+				give 5 of gold ingot to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 16:
+					remove held item from the player
+					give 4 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 15:
+				if durability of held item < 31:
+					remove held item from the player
+					give 3 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 30:
+				if durability of held item < 46:
+					remove held item from the player
+					give 2 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 45:
+				if durability of held item < 61:
+					remove held item from the player
+					give 1 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 60:
+				if durability of held item < 78:
+					remove held item from the player
+					send "Materialized!"
+		#chestplate
+		if held item is gold chestplate:
+			send durability of held item
+			if durability of held item = 0:
+				remove held item from the player 
+				give 8 of gold ingot to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 15:
+					remove held item from the player
+					give 7 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 14:
+				if durability of held item < 29:
+					remove held item from the player
+					give 6 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 28:
+				if durability of held item < 43:
+					remove held item from the player
+					give 5 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 42:
+				if durability of held item < 57:
+					remove held item from the player
+					give 4 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 56:
+				if durability of held item < 71:
+					remove held item from the player
+					give 3 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 70:
+				if durability of held item < 95:
+					remove held item from the player
+					give 2 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 94:
+				if durability of held item < 109:
+					remove held item from the player
+					give 1 of gold ingot to the player
+					send "Materialized!"
+			if durability of held item > 108:
+				if durability of held item < 112:
+					remove held item from the player
+					send "Materialized!"
+		#leggings
+		if held item is gold leggings:
+			if durability of held item = 0:
+				remove held item from the player
+				give 7 gold ingot to the player
+			if durability of held item > 0:
+				if durability of held item < 16:
+					give 6 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 15:
+				if durability of held item < 31:
+					give 5 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 30:
+				if durability of held item < 46:
+					give 4 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 45:
+				if durability of held item < 61:
+					give 3 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 60:
+				if durability of held item < 76:
+					give 2 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 75:
+				if durability of held item < 91:
+					give 1 of gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 90:
+				if durability of held item < 106:
+					remove held item from the player
+					send "Materialized!"
+		#boots
+		if held item is gold boots:
+			if durability of held item is 0:
+				give 4 gold ingot to the player
+				remove held item from the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 23:
+					give 3 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 22:
+				if durability of held item < 45:
+					give 2 gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 44:
+				if durability of held item < 67:
+					give gold ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 66:
+				if durability of held item < 91:
+					remove held item from the player
+					send "Materialized!"
+#  _____ _____   ____  _   _ 
+# |_   _|  __ \ / __ \| \ | |
+#   | | | |__) | |  | |  \| |
+#   | | |  _  /| |  | | . ` |
+#  _| |_| | \ \| |__| | |\  |
+# |_____|_|  \_\\____/|_| \_|
+		#helmet
+		if held item is iron helmet:
+			send durability of held item	
+			if durability of held item = 0:
+				remove held item from the player
+				give 5 of iron ingot to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 34:
+					remove held item from the player
+					give 4 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 33:
+				if durability of held item < 67:
+					remove held item from the player
+					give 3 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 66:
+				if durability of held item < 100:
+					remove held item from the player
+					give 2 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 99:
+				if durability of held item < 133:
+					remove held item from the player
+					give 1 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 132:
+				if durability of held item < 166:
+					remove held item from the player
+					send "Materialized!"
+		#chestplate
+		if held item is iron chestplate:
+			send durability of held item
+			if durability of held item = 0:
+				remove held item from the player 
+				give 8 of iron ingot to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 31:
+					remove held item from the player
+					give 7 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 30:
+				if durability of held item < 61:
+					remove held item from the player
+					give 6 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 60:
+				if durability of held item < 91:
+					remove held item from the player
+					give 5 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 90:
+				if durability of held item < 121:
+					remove held item from the player
+					give 4 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 120:
+				if durability of held item < 151:
+					remove held item from the player
+					give 3 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 150:
+				if durability of held item < 181:
+					remove held item from the player
+					give 2 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 180:
+				if durability of held item < 211:
+					remove held item from the player
+					give 1 of iron ingot to the player
+					send "Materialized!"
+			if durability of held item > 210:
+				if durability of held item < 241:
+					remove held item from the player
+					send "Materialized!"
+		#leggings
+		if held item is iron leggings:
+			if durability of held item = 0:
+				remove held item from the player
+				give 7 iron ingot to the player
+			if durability of held item > 0:
+				if durability of held item < 16:
+					give 6 iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 15:
+				if durability of held item < 31:
+					give 5 iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 30:
+				if durability of held item < 46:
+					give 4 iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 45:
+				if durability of held item < 61:
+					give 3 iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 60:
+				if durability of held item < 76:
+					give 2 iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 75:
+				if durability of held item < 91:
+					give iron ingot to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 90:
+				if durability of held item < 106:
+					remove held item from the player
+					send "Materialized!"
+		#boots
+		if held item is gold boots:
+			if durability of held item is 0:
+				give 4 diamonds to the player
+				remove held item from the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item < 23:
+					give 3 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 22:
+				if durability of held item < 45:
+					give 2 diamonds to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 44:
+				if durability of held item < 67:
+					give diamond to the player
+					remove held item from the player
+					send "Materialized!"
+			if durability of held item > 66:
+				if durability of held item < 91:
+					remove held item from the player
+					send "Materialized!"
