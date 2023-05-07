@@ -1,23 +1,3 @@
-#DONE:
-#-diamond helmet
-#-diamond chestplate
-#-diamond leggings
-#-diamond boots
-#-gold helmet
-#-gold chestplate
-#-gold leggings
-#-gold boots
-
-#NEEDED:
-#-iron helmet
-#-iron chestplate
-#-iron leggings
-#-iron boots
-#ERRORS:
-#96 - tab error - done
-#135 - tab error - done
-#136 - tab error - done
-
 command /mat:
 	description: Turn your armor/tools into raw materials!
 	permission: skript.mat
@@ -465,5 +445,152 @@ command /mat:
 					send "Materialized!"
 			if durability of held item > 66:
 				if durability of held item < 91:
+					remove held item from the player
+					send "Materialized!"
+#   _      ______       _______ _    _ ______ _____  
+#  | |    |  ____|   /\|__   __| |  | |  ____|  __ \ 
+#  | |    | |__     /  \  | |  | |__| | |__  | |__) |
+#  | |    |  __|   / /\ \ | |  |  __  |  __| |  _  / 
+#  | |____| |____ / ____ \| |  | |  | | |____| | \ \ 
+#  |______|______/_/    \_\_|  |_|  |_|______|_|  \_\
+		#leather gear
+		#helmet
+		if held item is leather cap:
+			if durability of held item is 0:
+				remove held item from the player
+				give 5 leather to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item <= 11:
+					remove held item from the player
+					give 4 leather to the player
+					send "Materialized!"
+			if durability of held item > 11:
+				if durability of held item <= 22:
+					remove held item from the player
+					give 3 leather to the player
+					send "Materialized!"
+			if durability of held item > 22:
+				if durability of held item <= 33:
+					remove held item from the player
+					give 2 leather to the player
+					send "Materialized!"
+			if durability of held item > 33:
+				if durability of held item <= 44:
+					remove held item from the player 
+					give leather to the player
+					send "Materialized!"
+			if durability of held item > 44:
+				if durability of held item <= 55:
+					remove held item from the player
+					send "Materialized!"
+		# chestplate
+		if held item is leather tunic:
+			if durability of held item = 0:
+				remove held item from the player
+				give 8 leather to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item <= 10:
+					remove held item from the player
+					give 7 leather to the player
+					send "Materialized!"
+			if durability of held item > 10:
+				if durability of held item <= 20:
+					remove held item from the player
+					give 6 leather to the player
+					send "Materialized!"
+			if durability of held item > 20:
+				if durability of held item <= 30:
+					remove held item from the player
+					give 5 leather to the player
+					send "Materialized!"
+			if durability of held item > 30:
+				if durability of held item <= 40:
+					remove held item from the player
+					give 4 leather to the player
+					send "Materialized!"
+			if durability of held item > 40:
+				if durability of held item <= 50:
+					remove held item from the player
+					give 3 leather to the player
+					send "Materialized!"
+			if durability of held item > 50:
+				if durability of held item >= 60:
+					remove held item from the player
+					give 2 leather to the player
+					send "Materialized!"
+			if durability of held item > 60:
+				if durability of held item <= 70:
+					remove held item from the player
+					give leather to the player
+					send "Materialized!"
+			if durability of held item > 70:
+				if durability of held item <= 80:
+					remove held item from the player
+					send "Materialized!"
+		#leggings
+		if held item is leather pants:
+			if durability of held item = 0:
+				remove held item from the player
+				give 7 leather to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item <= 11:
+					remove held item from the player
+					give 6 leather to the player
+					send "Materialized!"
+			if durability of held item > 11:
+				if durability of held item <= 22:
+					remove held item from the player
+					give 5 leather to the player
+					send "Materialized!"
+			if durability of held item > 22:
+			    if durability of held item <= 33:
+					remove held item from the player
+					give 4 leather to the player 
+					send "Materialized!"
+			if durability of held item > 33:
+				if durability of held item <= 44:
+					remove held item from the player
+					give 3 leather to the player
+					send "Materialized!"
+			if durability of held item > 44:
+				if durability of held item <= 55:
+					remove held item from the player
+					give 2 leather to the player
+					send "Materialized!"
+			if durability of held item > 55:
+				if durability of held item <= 66:
+					remove held item from the player
+					give leather to the player
+					send "Materialized!"
+			if durability of held item > 66:
+				if durability of held item <= 75:
+					remove held item from the player
+					send "Materialized!"
+		# boots
+		if held item is leather boots:
+			if durability of held item = 0:
+				remove held item from the player
+				give 4 leather to the player
+				send "Materialized!"
+			if durability of held item > 0:
+				if durability of held item <= 16:
+					remove held item from the player
+					give 3 leather to the player
+					send "Materialized!"
+			if durability of held item > 16:
+				if durability of held item <= 32:
+					remove held item from the player
+					give 2 leather to the player
+					send "Materialized!"
+			if durability of held item > 32:
+				if durability of held item <= 48:
+					remove held item from the player
+					give leather to the player 
+					send "Materialized!"
+			if durability of held item > 48:
+				if durability of held item <= 65:
 					remove held item from the player
 					send "Materialized!"
