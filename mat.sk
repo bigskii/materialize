@@ -594,3 +594,37 @@ command /mat:
 				if durability of held item <= 65:
 					remove held item from the player
 					send "Materialized!"
+#  _   _ ______ _______ _    _ ______ _____  _____ _______ ______ 
+# | \ | |  ____|__   __| |  | |  ____|  __ \|_   _|__   __|  ____|
+# |  \| | |__     | |  | |__| | |__  | |__) | | |    | |  | |__   
+# | . ` |  __|    | |  |  __  |  __| |  _  /  | |    | |  |  __|  
+# | |\  | |____   | |  | |  | | |____| | \ \ _| |_   | |  | |____ 
+# |_| \_|______|  |_|  |_|  |_|______|_|  \_\_____|  |_|  |______|
+		#helmet
+		if held item is netherite helmet:
+			if durability of held item < 300:
+				remove held item from the player
+				give netherite ingot to the player
+			else:
+				remove held item from the player
+			send "Materialized!"
+		#chestplate
+		if held item is netherite chestplate:
+			if durability of held item < 450:
+				remove held item from the player
+				give netherite ingot to the player
+			else:
+				remove held item from the player
+			send "Materialized!"
+		#leggings
+		if held item is netherite leggings:
+			if durability of held item < 415:
+				remove held item from the player
+				give netherite ingot to the player
+			else: 
+				remove held item from the player
+			send "Materialized!"
+		#boots
+		if held item is netherite boots:
+			if durability of held iten < 360:
+                                                                 
