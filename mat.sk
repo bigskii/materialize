@@ -627,4 +627,8 @@ command /mat:
 		#boots
 		if held item is netherite boots:
 			if durability of held iten < 360:
-                                                                 
+				remove held item from the player
+				give netherite ingot to the player
+			else:
+				remove held item from the player
+			send "Materialized!"
