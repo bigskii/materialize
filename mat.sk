@@ -546,7 +546,7 @@ command /mat:
 					give 5 leather to the player
 					send "Materialized!"
 			if durability of held item > 22:
-			    if durability of held item <= 33:
+				if durability of held item <= 33:
 					remove held item from the player
 					give 4 leather to the player 
 					send "Materialized!"
